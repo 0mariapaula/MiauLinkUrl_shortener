@@ -1,7 +1,3 @@
-# Rota para servir sitemap.xml na raiz
-@app.route('/sitemap.xml')
-def sitemap():
-    return send_from_directory('static', 'sitemap.xml')
 # =============================================
 # MiauLink - Encurtador de URL temático de gatos
 # Desenvolvido por Maria Paula Ferreira Lins
@@ -20,6 +16,7 @@ from flask import send_file
 from flask import Flask, request, redirect, render_template_string
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
+
 
 def gerar_codigo(tamanho=6):
     return ''.join(random.choices(string.ascii_letters + string.digits, k=tamanho))
@@ -81,6 +78,11 @@ from flask import send_from_directory
 @app.route('/google6af16fcaec3b096b.html')
 def google_verify():
     return send_from_directory('static', 'google6af16fcaec3b096b.html')
+
+# Rota para servir sitemap.xml na raiz
+@app.route('/sitemap.xml')
+def sitemap():
+    return send_from_directory('static', 'sitemap.xml')
 
 # Rota para gerar QR Code
 @app.route('/qr')
