@@ -1,3 +1,9 @@
+# Rota para verificação do Google Search Console
+from flask import send_from_directory
+
+@app.route('/google6af16fcaec3b096b.html')
+def google_verify():
+    return send_from_directory('static', 'google6af16fcaec3b096b.html')
 
 # =============================================
 # MiauLink - Encurtador de URL temático de gatos
