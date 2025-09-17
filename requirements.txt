@@ -1,0 +1,6 @@
+flask
+flask-limiter
+validators
+qrcode[pil]
+requests
+beautifulsoup4
