@@ -1,3 +1,7 @@
+# Rota para servir sitemap.xml na raiz
+@app.route('/sitemap.xml')
+def sitemap():
+    return send_from_directory('static', 'sitemap.xml')
 # =============================================
 # MiauLink - Encurtador de URL temático de gatos
 # Desenvolvido por Maria Paula Ferreira Lins
