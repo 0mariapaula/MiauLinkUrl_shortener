@@ -9,7 +9,6 @@ Encurtador de URLs temático de gatos, feito com Python + Flask!
 - Visual moderno, responsivo e com mascote de gato
 - Dark mode e light mode
 - Histórico dos últimos links encurtados
-- Estatísticas de acesso para cada link
 - Preview do destino antes do redirecionamento
 - Geração de QR Code para cada link
 - Proteção contra flood (rate limit por IP)
@@ -45,10 +44,6 @@ Encurtador de URLs temático de gatos, feito com Python + Flask!
 - Preview protegido contra SSRF
 - Arquivo de dados salvo de forma segura
 
-## Produção
-- Para publicar, use um servidor WSGI (ex: gunicorn, waitress) atrás de um proxy reverso (Nginx, etc)
-- Recomenda-se usar HTTPS para remover o aviso "Não seguro"
-
 ## Licença
 MIT
 
@@ -60,4 +55,4 @@ MIT
 Se encontrar algum problema ou tiver sugestões, entre em contato pelo WhatsApp acima!
 
 ---
-Feito com carinho e muitos miaus por [Seu Nome].
+Feito com carinho e muitos miaus por Maria Paula.
