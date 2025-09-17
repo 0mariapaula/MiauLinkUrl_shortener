@@ -1,13 +1,3 @@
-
-# ...existing code...
-
-# (depois da linha: app = Flask(__name__))
-from flask import send_from_directory
-
-@app.route('/google6af16fcaec3b096b.html')
-def google_verify():
-    return send_from_directory('static', 'google6af16fcaec3b096b.html')
-
 # =============================================
 # MiauLink - Encurtador de URL temático de gatos
 # Desenvolvido por Maria Paula Ferreira Lins
@@ -80,6 +70,13 @@ def recuperar_url(codigo):
 
 app = Flask(__name__)
 limiter = Limiter(get_remote_address, app=app, default_limits=["100 per hour"])
+
+# Rota para verificação do Google Search Console
+from flask import send_from_directory
+
+@app.route('/google6af16fcaec3b096b.html')
+def google_verify():
+    return send_from_directory('static', 'google6af16fcaec3b096b.html')
 
 # Rota para gerar QR Code
 @app.route('/qr')
