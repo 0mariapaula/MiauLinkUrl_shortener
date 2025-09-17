@@ -22,8 +22,11 @@ def salvar_urls(urls):
 
 def encurtar_url(url):
     urls = carregar_urls()
+    for cod, original in urls.items():
+        if original == url:
+            return cod
     codigo = gerar_codigo()
-    while codigo in urls: 
+    while codigo in urls:
         codigo = gerar_codigo()
     urls[codigo] = url
     salvar_urls(urls)
