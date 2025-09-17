@@ -1,3 +1,5 @@
+[![Deploy on Render](https://img.shields.io/badge/Deploy%20on-Render-46b1e6?logo=render&logoColor=white)](https://render.com/)
+
 # MiauLink 🐾
 
 Encurtador de URLs temático de gatos, feito com Python + Flask!
@@ -49,6 +51,13 @@ Encurtador de URLs temático de gatos, feito com Python + Flask!
 
 ## Licença
 MIT
+
+## Contato e Suporte
+
+- Desenvolvedora: Maria Paula Ferreira Lins
+- WhatsApp: 82 981274764
+
+Se encontrar algum problema ou tiver sugestões, entre em contato pelo WhatsApp acima!
 
 ---
 Feito com carinho e muitos miaus por [Seu Nome].

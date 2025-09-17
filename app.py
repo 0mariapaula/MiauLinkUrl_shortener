@@ -1,4 +1,11 @@
 
+# =============================================
+# MiauLink - Encurtador de URL temático de gatos
+# Desenvolvido por Maria Paula Ferreira Lins
+# Contato: 82 981274764
+# =============================================
+
+
 import io
 import qrcode
 import json
@@ -143,6 +150,9 @@ HTML_FORM = '''
         </div>
         {% endif %}
     </div>
+    <footer style="margin-top:2rem;text-align:center;font-size:0.95rem;opacity:0.8;">
+        Desenvolvido por Maria Paula Ferreira Lins | Contato: 82 981274764
+    </footer>
 </body>
 </html>
 '''
@@ -225,7 +235,11 @@ def redirecionar(codigo):
             <button type="submit">Prosseguir para o site</button>
         </form>
         <a href="/" style="display:inline-block;margin-top:1.5rem;color:#ffb347;">Voltar</a>
-        </div></body></html>
+        </div>
+        <footer style="margin-top:2rem;text-align:center;font-size:0.95rem;opacity:0.8;">
+            Desenvolvido por Maria Paula Ferreira Lins | Contato: 82 981274764
+        </footer>
+        </body></html>
         '''
         return html
     html = '''
@@ -237,6 +251,9 @@ def redirecionar(codigo):
         <div style="font-size:4rem;margin:1.5rem 0;">🤔🔗</div>
         <a href="/" style="color:#ffb347;font-size:1.1rem;">Voltar para a página inicial</a>
     </div>
+    <footer style="margin-top:2rem;text-align:center;font-size:0.95rem;opacity:0.8;">
+        Desenvolvido por Maria Paula Ferreira Lins | Contato: 82 981274764
+    </footer>
     </body></html>
     '''
     return html, 404
@@ -270,7 +287,11 @@ def stats():
         {% endfor %}
     </table>
     <a href="/" style="display:inline-block;margin-top:1.5rem;color:#ffb347;">Voltar</a>
-    </div></body></html>
+    </div>
+    <footer style="margin-top:2rem;text-align:center;font-size:0.95rem;opacity:0.8;">
+        Desenvolvido por Maria Paula Ferreira Lins | Contato: 82 981274764
+    </footer>
+    </body></html>
     '''
     from flask import render_template_string
     return render_template_string(html, urls=urls)
