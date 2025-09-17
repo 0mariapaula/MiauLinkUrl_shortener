@@ -1,4 +1,7 @@
-# Rota para verificação do Google Search Console
+
+# ...existing code...
+
+# (depois da linha: app = Flask(__name__))
 from flask import send_from_directory
 
 @app.route('/google6af16fcaec3b096b.html')
