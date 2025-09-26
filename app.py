@@ -308,5 +308,10 @@ def stats():
     from flask import render_template_string
     return render_template_string(html, urls=urls)
 
+# Servir robots.txt da pasta public
+@app.route('/robots.txt')
+def robots():
+    return send_from_directory(os.path.join(app.root_path, 'public'), 'robots.txt')
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
